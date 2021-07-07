@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Furniture Shop</title>
+
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css' />
+    <link rel='stylesheet' href='dist/style.build.css'>
+    <link rel='stylesheet' href='css/custom.css'>
+</head>
+
+<body>
+    <header class='bg-primary-lighter relative overflow-hidden'>
+        <nav class='headerNav sticky w-full py-2.5 pt-7 z-10'>
+            <div class='container mx-auto flex justify-between lg:justify-start items-center mx-w-full px-2.5 lg:px-0'>
+                <h2 class='logo font-medium text-2xl mr-0 lg:mr-5 xl:mr-7 z-20'>
+                    <a href='#' class='text-00'>Funiro.</a>
+                </h2>
+
+                <input type='checkbox' class='headerNavCheckbox absolute' id='navToggle' />
+                <label for='navToggle'
+                    class='headerNavButton relative lg:hidden rounded w-11 h-11 text-center z-20 bg-ff'>
+                    <span class='headerNavIcons left-2/4 top-2/4'></span>
+                </label>
+
+                <div
+                    class='rightMenu flex flex-col lg:flex-row justify-start lg:justify-between items-center w-0 lg:w-full absolute right-0 top-0 lg:relative h-screen lg:h-auto bg-primary-light pt-16 lg:pt-0'>
+
+                    <ul class='menu flex flex-col lg:flex-row items-center mb-7 lg:mb-0 mr-0 lg:mr-5 xl:mr-7 text-left'>
+                        <li
+                            class='hasDropdown relative rounded mx-3 py-0.5 px-2 hover:bg-primary-lighter lg:hover:bg-primary-light'>
+                            <a href='#' class='pr-7 inline-block'>Products</a>
+
+                            <ul
+                                class='absolute rounded p-2 bg-primary-lighter lg:bg-primary-light z-40 left-2/4 left-0'>
+                                <li><a href='#'>This is First Dropdown</a></li>
+                                <li><a href='#'>Dropdown 2</a></li>
+                                <li><a href='#'>Dropdown 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li
+                            class='hasDropdown relative rounded mx-3 py-0.5 px-2 hover:bg-primary-lighter lg:hover:bg-primary-light'>
+                            <a href='#' class='pr-7 inline-block'>Rooms</a>
+                        </li>
+
+                        <li class='rounded mx-3 py-0.5 px-2 hover:bg-primary-lighter lg:hover:bg-primary-light'>
+                            <a href='#'>Inspirations</a>
+                        </li>
+                    </ul>
+
+                    <div class='search w-72 lg:w-80 xl:w-473 relative mb-5 lg:mb-0 lg:mr-auto bg-ff'>
+                        <input class='w-full mx-w-full h-full text-61 text-sm bg-transparent py-2 px-3 pl-11'
+                            type='search' name='search' id='search' placeholder='Search for minimalist chair' />
+                        <img class='absolute w-5 h-5' src='img/icons/search.svg' alt='search'>
+                    </div>
+
+                    <div class='userOptions flex items-center w-32 lg:w-40 justify-between'>
+                        <div class='favorite'>
+                            <a href='#'><img src='img/icons/heart.svg' alt='heart'></a>
+                        </div>
+
+                        <div class='cart'>
+                            <a href='#'><img src='img/icons/cart.svg' alt='cart'></a>
+                        </div>
+
+                        <div class='user'>
+                            <a href='#'><img src='img/user.png' alt='User'></a>
+                        </div>
+                    </div>
+                </div> <!-- Right Menu -->
+            </div> <!-- Container -->
+        </nav> <!-- Header Nav -->
+
+        <div class='headerContent container mt-10 relative'>
+            <div class='heroSlider relative w-full ml-auto mt-3'>
+                <!-- Additional required wrapper -->
+                <div class='swiper-wrapper'>
+                    <!-- Slides -->
+                    <div class='swiper-slide' style='background-image: url(img/slider-1.png)'>
+                        <div class='slideContent w-72 absolute right-10 bottom-10'>
+                            <h3 class='text-2xl md:text-3xl text-3a font-semibold'>Bohauss</h3>
+                            <p class='text-base text-61 mt-2'>Luxury big sofa 2-set</p>
+
+                            <div class='flex justify-between items-center mt-2'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 20,000.00</h4>
+                                <a href='#' class='h-6 text-2xl flex items-center'>&#10140;</a>
+                            </div>
+                        </div> <!-- Slider Content -->
+                    </div> <!-- Swiper Slide -->
+
+                    <div class='swiper-slide' style='background-image: url(img/slider-1.png)'>
+                        <div class='slideContent w-72 absolute right-10 bottom-10'>
+                            <h3 class='text-2xl md:text-3xl text-3a font-semibold'>Bohauss</h3>
+                            <p class='text-base text-61 mt-2'>Luxury big sofa 2-set</p>
+
+                            <div class='flex justify-between items-center mt-2'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 20,000.00</h4>
+                                <a href='#' class='h-6 text-2xl flex items-center'>&#10140;</a>
+                            </div>
+                        </div> <!-- Slider Content -->
+                    </div> <!-- Swiper Slide -->
+
+                    <div class='swiper-slide' style='background-image: url(img/slider-1.png)'>
+                        <div class='slideContent w-72 absolute right-10 bottom-10'>
+                            <h3 class='text-2xl md:text-3xl text-3a font-semibold'>Bohauss</h3>
+                            <p class='text-base text-61 mt-2'>Luxury big sofa 2-set</p>
+
+                            <div class='flex justify-between items-center mt-2'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 20,000.00</h4>
+                                <a href='#' class='h-6 text-2xl flex items-center'>&#10140;</a>
+                            </div>
+                        </div> <!-- Slider Content -->
+                    </div> <!-- Swiper Slide -->
+                </div> <!-- Swiper Wrapper -->
+                <!-- If we need pagination -->
+                <div class='swiper-pagination'></div>
+
+                <!-- If we need navigation buttons -->
+                <div class='swiper-button-prev right-14 ml-auto'></div>
+                <div class='swiper-button-next right-0'></div>
+            </div> <!-- Hero Slider -->
+
+            <div
+                class='heroCta w-full max-w-lg py-16 px-4 md:px-8 lg:px-14 relative lg:absolute top-0 left-0 mt-7 lg:mt-0 mx-auto lg:mx-auto'>
+                <h1 class='text-3a text-3xl md:text-5xl lg:text-6xl font-bold mb-4'>High-Quality Furniture Just For You
+                </h1>
+                <p class='text-89 mb-12 text-lg md:text-xl'>
+                    Our furniture is made from selected and best quality materials that are suitable for your dream home
+                </p>
+
+                <a href='#'
+                    class='w-full bg-primary-default inline-block font-semibold p-6 text-center text-xl transition-all no-underline hover:shadow-lg text-ff'>
+                    Shop Now
+                </a>
+            </div> <!-- Hero CTA -->
+        </div> <!-- Header Content -->
+    </header> <!-- Header -->
+
+    <main>
+        <section id='feature' class='feature my-20'>
+            <div class='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-11 md:gap-x-14 lg:gap-x-16'>
+                <div class='featureItem flex items-center'>
+                    <img class='m-5' src='img/icons/trophy.png' alt='Trophy'>
+                    <div class='featureContent'>
+                        <h4 class='text-3a font-semibold text-lg'>High Quality</h4>
+                        <p class='text-base text-89'>Crafted from top materials</p>
+                    </div>
+                </div>
+                <div class='featureItem flex items-center'>
+                    <img class='m-5' src='img/icons/guarantee.png' alt='Guarantee'>
+                    <div class='featureContent'>
+                        <h4 class='text-3a font-semibold text-lg'>Warranty Protection</h4>
+                        <p class='text-base text-89'>Over 2 years</p>
+                    </div>
+                </div>
+                <div class='featureItem flex items-center'>
+                    <img class='m-5' src='img/icons/shipping.png' alt='Shipping'>
+                    <div class='featureContent'>
+                        <h4 class='text-3a font-semibold text-lg'>Free Shipping</h4>
+                        <p class='text-base text-89'>Order over 150 $</p>
+                    </div>
+                </div>
+                <div class='featureItem flex items-center'>
+                    <img class='m-5' src='img/icons/customer-support.png' alt='Customer Support'>
+                    <div class='featureContent'>
+                        <h4 class='text-3a font-semibold text-lg'>24 / 7 Support</h4>
+                        <p class='text-base text-89'>Dedicated support</p>
+                    </div>
+                </div> <!-- Feature Item -->
+            </div> <!-- Container -->
+        </section> <!-- Feature Section -->
+
+
+        <section id='products' class='products mb-16'>
+            <div class='container'>
+                <h2 class='sectionHeading text-3a text-center font-bold mb-8 text-4xl'>Products</h2>
+                <div
+                    class='productsWrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-8 px-4 xl-px-0'>
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-1.png' alt='Product 1'>
+
+                            <div
+                                class='tag priceDrop absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                -30%</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Styltherine</h3>
+                            <p class='text-base text-89 mb-2'>Stylish cafe chair and table</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 2,500.00</h4>
+                                <p class='text-b0 text-base line-through'>BDT 3,500.00</p>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-2.png' alt='Product 2'>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Leviosa</h3>
+                            <p class='text-base text-89 mb-2'>Stylish cafe chair</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 2,500.00</h4>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-3.png' alt='Product 3'>
+
+                            <div
+                                class='tag priceDrop absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                -50%</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Lolito</h3>
+                            <p class='text-base text-89 mb-2'>Luxury big sofa</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 7,000.00</h4>
+                                <p class='text-b0 text-base line-through'>BDT 14,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-4.png' alt='Product 4'>
+
+                            <div
+                                class='tag newItem absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                New</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Respira</h3>
+                            <p class='text-base text-89 mb-2'>Minimalist fan</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 500.00</h4>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-5.png' alt='Product 5'>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Grifo</h3>
+                            <p class='text-base text-89 mb-2'>Night lamp</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 1,500.00</h4>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-6.png' alt='Product 6'>
+
+                            <div
+                                class='tag newItem absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                New</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Muggo</h3>
+                            <p class='text-base text-89 mb-2'>Small mug</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 150.00</h4>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-7.png' alt='Product 7'>
+
+                            <div
+                                class='tag priceDrop absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                -50%</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Pingky</h3>
+                            <p class='text-base text-89 mb-2'>Cute bed set</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 7,000.00</h4>
+                                <p class='text-b0 text-base line-through'>BDT 14,000.00</p>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='productItem relative'>
+                        <figure class='relative'>
+                            <img class='w-full' src='img/products/product-8.png' alt='Product 8'>
+
+                            <div
+                                class='tag newItem absolute top-6 right-6 font-base text-ff w-12 h-12 rounded-full flex items-center justify-center'>
+                                New</div>
+                        </figure>
+                        <div class='content p-4 pb-7'>
+                            <h3 class='text-xl md:text-2xl text-3a font-semibold mb-2'>Potty</h3>
+                            <p class='text-base text-89 mb-2'>Minimalist flower pot</p>
+                            <div class='price flex justify-between items-center'>
+                                <h4 class='text-xl text-3a font-semibold'>BDT 500.00</h4>
+                            </div>
+                        </div>
+
+                        <div class='overlay flex flex-col items-center justify-center absolute w-full top-0 left-0'>
+                            <a href='#'
+                                class='btnCart py-3 px-14 text-primary-default text-base font-semibold inline-block mb-8 bg-ff'>
+                                Add to Cart
+                            </a>
+
+                            <div class='div flex items-center justify-between inline-block font-base'>
+                                <a href='#' class='mr-12 text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/share.svg' alt='Share'> Share</a>
+                                <a href='#' class='text-ff flex items-center'><img class='mr-2'
+                                        src='img/icons/heart-white.svg' alt='Heart'> Like</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='showMore mt-12 text-center py-3'>
+                    <a href='#'
+                        class='px-20 py-3 text-base font-semibold text-primary-default border border-solid border-current transition-all duration-300 hover:bg-primary-default hover:text-ff'>Show
+                        More</a>
+                </div>
+            </div>
+        </section>
+    </main> <!-- Main -->
+
+
+    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>

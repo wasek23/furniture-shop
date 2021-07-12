@@ -367,7 +367,7 @@ header .heroSlider .swiper-button-prev:hover, header .heroSlider .swiper-button-
 
 @media screen and (min-width: 1024px) {
   .inspirations .inspirationSlider {
-    width: 600px;
+    width: 550px;
   }
 }
 

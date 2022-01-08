@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 body {
   font-family: Gilroy;
+  font-family: 'Questrial', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -349,8 +351,15 @@ header .heroSlider .swiper-button-prev:hover, header .heroSlider .swiper-button-
 }
 
 .inspirations .grid {
-  -ms-grid-columns: 1.2fr 2fr;
-      grid-template-columns: 1.2fr 2fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1280px) {
+  .inspirations .grid {
+    -ms-grid-columns: 1.2fr 2fr;
+        grid-template-columns: 1.2fr 2fr;
+  }
 }
 
 .inspirations .cta {
@@ -361,13 +370,13 @@ header .heroSlider .swiper-button-prev:hover, header .heroSlider .swiper-button-
 .inspirations .inspirationSlider {
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 90vw;
   height: 582px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .inspirations .inspirationSlider {
-    width: 550px;
+    width: 650px;
   }
 }
 
@@ -394,14 +403,32 @@ header .heroSlider .swiper-button-prev:hover, header .heroSlider .swiper-button-
   height: 486px;
 }
 
+.inspirations .inspirationSlider .swiper-slide .slideContent {
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(31px);
+          backdrop-filter: blur(31px);
+}
+
 .inspirations .inspirationSlider .swiper-slide-active {
-  height: 582px;
+  height: 540px;
+}
+
+@media screen and (min-width: 768px) {
+  .inspirations .inspirationSlider .swiper-slide-active {
+    height: 582px;
+  }
 }
 
 .inspirations .inspirationSlider .swiper-pagination {
-  bottom: 32px;
-  left: calc(50% + 12px);
   width: auto;
+  left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .inspirations .inspirationSlider .swiper-pagination {
+    bottom: 32px;
+    left: calc(50% + 12px);
+  }
 }
 
 .inspirations .inspirationSlider .swiper-button-next {
@@ -410,3 +437,115 @@ header .heroSlider .swiper-button-prev:hover, header .heroSlider .swiper-button-
   -webkit-box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
 }
+
+.tipsTricks .container {
+  position: relative;
+}
+
+.tipsTricks .container::before, .tipsTricks .container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  width: 1000px;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+.tipsTricks .container::after {
+  right: -1000px;
+  left: auto;
+}
+
+.tipsTricks .slideContent {
+  -webkit-box-shadow: 0 4px 4px #00000040;
+          box-shadow: 0 4px 4px #00000040;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tipsTricks .slideContent:hover {
+  -webkit-box-shadow: 0 8px 8px #00000040;
+          box-shadow: 0 8px 8px #00000040;
+}
+
+.tipsTricks .slideContent img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tipsTricks .swiper-pagination {
+  position: relative;
+}
+
+.tipsTricks .swiper-button-prev, .tipsTricks .swiper-button-next {
+  top: calc(50% - 20px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+  z-index: 5;
+}
+
+.tipsTricks .swiper-button-prev {
+  left: 0;
+}
+
+.tipsTricks .swiper-button-next {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.gallery .galleryItems {
+  -webkit-column-count: 1;
+          column-count: 1;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 576px) {
+  .gallery .galleryItems {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery .galleryItems {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery .galleryItems {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+
+.gallery .galleryItems img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+footer .container {
+  border-top: 1px solid #d8d8d8;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+
+@media (min-width: 1024px) {
+  footer .container {
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+footer .stayUpdated input {
+  width: calc( 100% - 52px);
+  background-color: #f4f5f7;
+}
+/*# sourceMappingURL=custom.css.map */

@@ -41,7 +41,11 @@ new Swiper('.heroSlider', {
 new Swiper('.inspirationSlider', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 2,
+    slidesPerView: 1,
+    breakpoints: {
+        // when window width is >= 576px
+        768: { slidesPerView: 2 }
+    },
     spaceBetween: 24,
     loop: true,
     autoplay: {
@@ -67,5 +71,43 @@ new Swiper('.inspirationSlider', {
     // Navigation arrows
     navigation: {
         nextEl: '.inspirationSlider .swiper-button-next',
+    }
+});
+
+// Tips & Tricks Slider
+new Swiper('.tipsSlider', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 1,
+    breakpoints: {
+        // when window width is >= 576px
+        576: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    },
+    spaceBetween: 25,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+    },
+    speed: 1000,
+    effect: '',
+    fadeEffect: {
+        crossFade: true
+    },
+    allowTouchMove: false,
+    allowSlideNext: true,
+    allowSlidePrev: true,
+    autoHeight: false,
+    notificationClass: null,
+
+    // If we need pagination
+    pagination: {
+        el: '.tipsSlider .swiper-pagination',
+        clickable: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.tipsSlider .swiper-button-next',
     }
 });
